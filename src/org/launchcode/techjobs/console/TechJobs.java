@@ -110,7 +110,7 @@ public class TechJobs {
 
     // Print a list of jobs
     private static void printJobs(ArrayList<HashMap<String, String>> someJobs) {
-        if (!(someJobs.size() < 1)) {
+        if (someJobs.size() > 0) {
         for (var job: someJobs) {
             for (var key : job.keySet()) {
                 String description = job.get(key);

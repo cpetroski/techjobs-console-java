@@ -95,7 +95,7 @@ public class JobData {
         for (var job: allJobs){
             for(var key : job.keySet()){
                 String jobDesc = job.get(key);
-                if(jobDesc.toLowerCase().contains(value.toLowerCase())){
+                if(jobDesc.toLowerCase().contains(value.toLowerCase())&& !(jobs.contains(job))){
                     jobs.add(job);
                 }
             }
